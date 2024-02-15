@@ -3,13 +3,14 @@
 }
 
 header{
-    height: 120px;
+    height: 110px;
     background-color: #fff; 
     position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
-    box-shadow: -1px 5px 9px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
 
 .in_header{
@@ -30,7 +31,7 @@ header{
 .top_nav{
     height: 120px;
     padding: 0 35px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -38,21 +39,21 @@ header{
 
 .top_nav>a:hover{
     border-bottom: 3px solid #0078C6;
-    padding: 42px 0;
+    padding: 39px 0;
     color:#0078C6 ;
 }
 
 .submenu_wrap{
     width: 100%;
     position: absolute;
-    top: 120px;
+    top: 110px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     z-index: 90;
     display: none;
-    box-shadow: -1px 5px 9px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .submenu{
@@ -80,7 +81,7 @@ header{
 
 .submenu_list>ul>li{
     font-size: 18px;
-    padding: 0 40px 25px 50px;
+    padding: 0 25px 25px 55px;
 }
 
 .submenu_list>ul>li>a:hover{    
@@ -98,7 +99,6 @@ header{
     display: inline-block;
     padding-right: 20px;
     height: 100%;
-    color: #666;
 }
 
 .sub_nav li>a:hover{
@@ -121,7 +121,7 @@ header{
 }
 
 .login img{
-    width: 29px;
+    width: 25px;
 }
 
 .login h3{
@@ -130,12 +130,12 @@ header{
 }
 
 .search{
-    width: 24px;
+    width: 20px;
 }
 
 .menu_btn a{
     width: 130px;
-    height: 40px;
+    height: 45px;
     background-color:#0078C6 ;
     display: flex;
     align-items: center;
@@ -143,10 +143,10 @@ header{
     border-radius: 5px;
 }
 
-.menu_btn_heart{
-    width: 21px;
-    height: 18px;
-    margin-right: 5px;
+.menu_btn_heart, .menu_heart{
+    width: 18px;
+    height: 16px;
+    margin-right: 4px;
 }
 
 .menu_btn p {
@@ -156,7 +156,7 @@ header{
 /* header end  */
 
 .section_1{
-    margin-top: 120px;
+    margin-top: 110px;
 }
 
 .swiper-container{
@@ -203,10 +203,10 @@ header{
 }
 
 .slide_min_text{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     padding-bottom: 10px;
-    line-height: 1.2;
+    line-height: 1.3;
     letter-spacing: -2px;
 }
 
@@ -248,7 +248,7 @@ header{
 }
 
 .sec2_sub_title h3{
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .sec2_sub_title p{
@@ -274,12 +274,12 @@ header{
 .campaign_con{
     width: 100%;
     margin-right: 20px;
-    border: 4px solid #E9E9E9;
+    border: 4px solid #fff;
     box-sizing: border-box;
     border-radius: 0 0 30px 0;
     transition-duration: 0.3s;
     transition-property: transform;
-    box-shadow: 4px 3px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -299,6 +299,7 @@ header{
 
 .campaign_img img{
     object-position: center;
+    height: 100%;
 }
 
 .click_btn{
@@ -426,7 +427,7 @@ header{
 
 .sec3_ban_text{
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .sec3_ban_text span{
@@ -468,6 +469,11 @@ header{
 .news_img{
     width: 100%;
     height: 350px;
+}
+
+.news_img img{
+    width: 100%;
+    height: 100%;
 }
 
 .news_text{
@@ -846,7 +852,7 @@ footer{
 
 .in_fot{
     width: 1130px;
-    height: 80px;
+    height: 60px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -949,25 +955,38 @@ footer{
 /* 1200px start  */
 @media all and (max-width:1200px) {
     header{
-        height: 90px;
+        height: 70px;
     }
 
     .in_header{
         width: 100%;
-        padding: 0 50px;
+        padding: 0 0 0 50px;
         box-sizing: border-box;
     }
     
     .gnb, .login, .search{
         display: none;
     }
-
-    .logo, .login_menu{
-        width: 185px;
+    
+    .login_menu{
+        display: none;
     }
 
-    .mo_menu_img, .mo_menu img, .mo_gnb, .mo_login, .mo_menu_btn{
+    .mo_menu img, .mo_gnb, .mo_login, .mo_menu_btn{
         display: block;
+    }
+
+    .mo_menu_img{
+        width: 70px;
+        height: 70px;
+        background-color: #0078C6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mo_menu_img img{
+        width: 25px;
     }
 
     .mo_menu{
@@ -995,7 +1014,7 @@ footer{
     .mo_wrap{
         position: relative;
         background-color: #0078C6;
-        padding: 30px 20px 40px 20px;
+        padding: 20px 30px 30px 30px;
         box-sizing: border-box;
     }
 
@@ -1036,7 +1055,7 @@ footer{
         margin: 0 auto;
         border: 1px solid #fff;
         border-radius: 5px;
-        margin-top: 30px;
+        margin-top: 20px;
         padding: 15px;
         color: #fff;
         display: flex;
@@ -1114,6 +1133,10 @@ footer{
     .mo_sub_nav li{
         line-height: 25px;
     }
+
+    .menu_btn_heart{
+        margin-right: 5px;
+    }
     
     #tab01:checked ~ #mo_submenu01{display: block;}
     #tab02:checked ~ #mo_submenu02{display: block;}
@@ -1137,7 +1160,7 @@ footer{
 
     /* header end  */
     .section_1{
-        margin-top: 90px;
+        margin-top: 70px;
     }
 
     .section_1 .swiper_button{
@@ -1145,16 +1168,17 @@ footer{
     }
 
     .slide_text{
-        top: 65%;
-        left: 15%;
+        top: 72%;
+        left: 6%;
     }
 
     .slide_min_text {
-        font-size: 42px;
+        font-size: 4vw;
     }
 
     .people {
         font-size: 22px;
+        margin-bottom: 30px;
     }
 
     /* section_1 end  */
@@ -1208,7 +1232,7 @@ footer{
     }
     
     .sec3_banner{
-        height: 120px;
+        height: 110px;
         flex-direction: column;       
     }
 
@@ -1297,6 +1321,10 @@ footer{
         width: 100%;
     }
 
+    .icon{
+        width: 650px;
+    }
+
     .icon_con a{
         width: 110px;
         height: 110px;
@@ -1323,7 +1351,7 @@ footer{
     .section_6{
         align-items: center;
         justify-content:end;
-        padding: 0 20px 40px 20px;
+        padding: 0 20px 30px 20px;
     }
 
     .news_letter{
@@ -1347,7 +1375,6 @@ footer{
 
     .in_fot{
         width: 100%;
-        height: 60px;
         padding: 0 50px;
     }
 
@@ -1371,12 +1398,31 @@ footer{
         width: 260px;
         padding-bottom: 50px;
     }
+    /* footer end  */
 
+    .fix_btn{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: #0078C6;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 10;
+        box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.3);
+    }
 
+    .fix_btn a{
+        color: #fff;
+        font-size: 18px;
+        line-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 }
 /* 1200px end  */
-
 
 
 
@@ -1417,7 +1463,6 @@ footer{
         font-size: 14px;
     }
 
-    
 }
 /* 950px end  */
 
@@ -1426,24 +1471,22 @@ footer{
 
 /* 768px start  */
 @media all and (max-width:768px) {
+
     header{
-        height: 70px;
+        height: 60px;
     }
 
     .in_header{
-        padding: 0 20px;
-    }
-
-    .logo, .login_menu{
-        width: 150px;
+        padding: 0 0 0 20px;
     }
 
     .logo img{
-        width: 120px;
+        width: 125px;
     }
 
     .mo_menu_img{
-        width: 20px;
+        width: 60px;
+        height: 60px;
     }
 
     .menu_btn a{
@@ -1457,16 +1500,11 @@ footer{
     /* header end  */
 
     .section_1{
-        margin-top: 70px;
+        margin-top: 60px;
     }
 
     .section_1 .img1{ 
         background-position:right;
-    }
-
-    .slide_text{
-        top: 70%;
-        left: 12%;
     }
 
     .slide_min_text{
@@ -1522,15 +1560,6 @@ footer{
         justify-content: center;
     }
 
-    .sec3_btn .btn{
-        width: 140px;
-        height: 45px;
-    }
-
-    .sec3_ban_text{
-        font-size: 16px;
-    }
-
     .sec3_logo > a{
         width: 110px;
         padding-right: 22px;
@@ -1581,6 +1610,10 @@ footer{
         font-size: 16px;
     }
 
+    .in_sec5_content > img{
+        width: 420px;
+    }
+
     .sec5_txt h2{
         font-size: 28px;
     }
@@ -1609,7 +1642,7 @@ footer{
     /* section_6 end  */
 
     .in_fot{
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
     .in_fot > a{
@@ -1665,6 +1698,33 @@ footer{
     .icon_con span{
         font-size: 14px;
     }
+    /* header end  */
+
+    .section_1 .swiper_button{
+        display: none;
+    }
+
+    .slide_min_text{
+        font-size: 5.8vw;
+    }
+    /* section_1 end  */
+
+    .sec3_min_text{
+        font-size: 22px;
+    }
+
+    .sec3_btn .btn{
+        width: 140px;
+        height: 45px;
+    }
+
+    .sec3_ban_text{
+        font-size: 14px;
+    }
+
+    /* section_3 end  */
+
+
 }
 
 /* 550px end */

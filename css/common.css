@@ -29,7 +29,7 @@ label{
 /* ////////////////////////////////////////////////// */
 
 .btn{
-    width:165px ;
+    width: 180px ;
     height: 55px;
     background-color: #0078C6;
     display: flex;
@@ -64,7 +64,7 @@ label{
     display: inline-block;
     width: 350px;
     text-align: right;
-    font-size: 48px;
+    font-size: 42px;
     color: #0078C6;
     border-bottom: 2px solid #0078C6;
 }
@@ -108,7 +108,7 @@ label{
 @media all and (max-width:1200px) {
 
     .btn{
-        width:150px ;
+        width:160px;
         height: 50px;
         font-size: 16px;
     }

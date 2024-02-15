@@ -119,31 +119,35 @@
         // centeredSlides: true,
         breakpoints: {
             300: {
-                slidesPerView: 1,  //브라우저가 768보다 클 때
+                slidesPerView: 1, 
                 spaceBetween: 20,
               },
             360: {
-                slidesPerView: 1.2,  //브라우저가 768보다 클 때
+                slidesPerView: 1.2, 
                 spaceBetween: 20,
               },
             430:{
-                slidesPerView: 1.5,  //브라우저가 768보다 클 때
+                slidesPerView: 1.5, 
+                spaceBetween: 20,
+            }, 
+            500:{
+                slidesPerView: 1.7, 
                 spaceBetween: 20,
             }, 
             600: {
-                slidesPerView: 2,  //브라우저가 768보다 클 때
+                slidesPerView: 2, 
                 spaceBetween: 20,
             },
             730: {
-                slidesPerView: 2.5,  //브라우저가 768보다 클 때
+                slidesPerView: 2.5, 
                 spaceBetween: 20,
               },
             870: {
-              slidesPerView: 3,  //브라우저가 768보다 클 때
+              slidesPerView: 3, 
               spaceBetween: 20,
             },
             1000: {
-              slidesPerView: 3.5,  //브라우저가 1024보다 클 때
+              slidesPerView: 3.5,  
               spaceBetween: 20,
             },
         }
